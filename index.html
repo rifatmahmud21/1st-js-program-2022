@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="mt-5 d-flex justify-content-center bg-color">
+        <div class="card p-3 shadow-lg border-0 mt-5 mb-5">
+            <div>
+                <h1 class="text-center fw-bolder text-danger">People Inside</h1>
+            </div>
+
+
+            <div id="count-pe" class="text-center fw-bold display-1 ">0</div>
+
+
+            <div class="d-flex justify-content-center align-iteams-center">
+                <div>
+                    <button id="increment-btn" onclick="increment(); totaltickets();"
+                        class="btn btn-danger rounded-pill fw-bolder fs-3 px-5 py-2 mt-2">People In</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-iteams-center">
+                <div>
+                    <button id="peopleOut-btn" onclick="peopleOut(); minusPpl();"
+                        class="btn btn-danger rounded-pill fw-bolder fs-3 px-5 py-2 mt-5">People Go Out</button>
+                </div>
+            </div>
+            <div id="reverse-count" class="text-center fw-bold display-1 mt-3">0</div>
+
+
+            <h1 class="text-center fw-bolder text-danger mt-3">Total Ticket Sold</h1>
+            <div id="total-ticket" class="text-center fw-bold display-3 text-success">0</div>
+
+
+
+
+            <script src="index.js"></script>
+</body>
+
+</html>
